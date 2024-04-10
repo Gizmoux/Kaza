@@ -1,0 +1,18 @@
+.header {
+	display: flex;
+	justify-content: space-between; /* Pour aligner les éléments sur les bords gauche et droit */
+	align-items: center; /* Pour aligner verticalement les éléments sur la même ligne */
+}
+
+.header img {
+	width: 100px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.pages {
+	list-style-type: none; /* Supprime les puces de la liste */
+	display: flex;
+}
+
+.pages li {
+	margin-left: 20px; /* Espace entre les éléments de la liste */
+}
