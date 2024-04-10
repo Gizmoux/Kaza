@@ -1,5 +1,6 @@
 import Banner from './Banner';
 import bannerImage from '../assets/images/about_image.png';
+import Collapse from './Collapse';
 import '../../style/AboutData.scss';
 const About = ({ imgSrc }) => {
 	const aboutDatas = [
@@ -7,24 +8,25 @@ const About = ({ imgSrc }) => {
 			id: '1',
 			title: 'Fiabilité',
 			content:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.',
 		},
 		{
 			id: '2',
 			title: 'Respect',
-			content: 'Dolor magna eget est lorem ipsum dolor sit amet consectetur.',
+			content:
+				'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
 		},
 		{
 			id: '3',
 			title: 'Service',
 			content:
-				'Purus gravida quis blandit turpis cursus in hac habitasse. Adipiscing elit pellentesque habitant morbi tristique senectus et.',
+				'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.',
 		},
 		{
 			id: '4',
 			title: 'Responsabilité',
 			content:
-				'Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Consequat mauris nunc congue nisi vitae suscipit tellus.',
+				"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
 		},
 	];
 	return (
@@ -35,9 +37,7 @@ const About = ({ imgSrc }) => {
 			<div>
 				{aboutDatas.map((data, index) => {
 					return (
-						<div key={index} className="about-data">
-							{data.title}
-						</div>
+						<Collapse title={data.title} content={data.content} key={index} />
 					);
 				})}
 			</div>

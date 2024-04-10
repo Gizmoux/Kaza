@@ -19,14 +19,25 @@ const Product = () => {
 					alt={data.title}
 					className="image-product"
 				/>
-				<h1>{product.title}</h1>
-				<h2>ID de ce produit est {idCard}</h2>
-				<p>Localisation{product.location}</p>
-				<p>Hôte{product.host.name}</p>
-				<p>Rating{product.rating}</p>
-				<p>Description{product.description}</p>
-				<p>Tags{product.tags[0]}</p>
-				<p>Équipements{product.equipments[0]}</p>
+				<div className="container-title-host">
+					<div className="product-title">
+						<h1>{product.title}</h1>
+						{/* <h2>ID de ce produit est {idCard}</h2> */}
+						<p>{product.location}</p>
+					</div>
+					<div className="product-host">
+						<p>{product.host.name}</p>
+						<img src={product.host.picture} alt="profil picture" />
+					</div>
+				</div>
+				<div className="product-infos">
+					<p>Tags{product.tags[0]}</p>
+					<p>Rating{product.rating}</p>
+				</div>
+				<div className="product-description">
+					<p>Description{product.description}</p>
+					<p>Équipements{product.equipments[0]}</p>
+				</div>
 			</div>
 		);
 };
