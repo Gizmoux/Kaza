@@ -1,5 +1,6 @@
 import data from '../data/data.json';
 import '../../style/Product.scss';
+import Slideshow from './Slideshow';
 import { ErrorPage } from './ErrorPage';
 import { useState, Navigate } from 'react';
 import { useParams } from 'react-router-dom';
@@ -14,11 +15,8 @@ const Product = () => {
 		return (
 			<div key={data.id}>
 				<p>Carousel</p>
-				<img
-					src={product.pictures[0]}
-					alt={data.title}
-					className="image-product"
-				/>
+				<Slideshow picture={product.pictures} title={data.title} />
+
 				<div className="container-title-host">
 					<div className="product-title">
 						<h1>{product.title}</h1>
