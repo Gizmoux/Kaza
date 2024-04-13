@@ -1,7 +1,9 @@
 import data from '../data/data.json';
 import '../../style/Product.scss';
 import Slideshow from './Slideshow';
+
 import { ErrorPage } from './ErrorPage';
+import Collapse from './Collapse';
 import { useState, Navigate } from 'react';
 import { useParams } from 'react-router-dom';
 const Product = () => {
@@ -29,12 +31,14 @@ const Product = () => {
 					</div>
 				</div>
 				<div className="product-infos">
-					<p>Tags{product.tags[0]}</p>
+					<p className="tags-container">{product.tags}</p>
 					<p>Rating{product.rating}</p>
 				</div>
 				<div className="product-description">
-					<p>Description{product.description}</p>
-					<p>Équipements{product.equipments[0]}</p>
+					<Collapse title="Description" content={product.description} />
+					<Collapse title="Équipements" content={product.equipments} />
+					{/* <p>Description{product.description}</p> */}
+					{/* <p>Équipements{product.equipments[0]}</p> */}
 				</div>
 			</div>
 		);
