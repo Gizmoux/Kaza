@@ -1,11 +1,15 @@
 .collapse-container {
 	background-color: #f46060;
+	color: white;
 	border-radius: 5px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: space-between;
+	height: auto;
+	width: 400px;
+	margin-right: 50px;
 	margin-bottom: 20px;
-	width: 80%;
 }
 
 .chevron-up {

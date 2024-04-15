@@ -1,6 +1,7 @@
 import data from '../data/data.json';
 import '../../style/Product.scss';
 import Slideshow from './Slideshow';
+import Tag from './Tag';
 import Rating from './Rating';
 import { ErrorPage } from './ErrorPage';
 import Collapse from './Collapse';
@@ -30,7 +31,12 @@ const Product = () => {
 					</div>
 				</div>
 				<div className="product-infos">
-					<p className="tags-container">{product.tags}</p>
+					{/* <p className="tags-container">{product.tags}</p> */}
+					<div className="tag-container">
+						{product.tags.map((tag, index) => (
+							<Tag key={index} product={tag} />
+						))}
+					</div>
 					<Rating product={product.rating} />
 				</div>
 				<div className="product-description">
