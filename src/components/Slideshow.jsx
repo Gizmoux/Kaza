@@ -14,20 +14,30 @@ const Slideshow = ({ picture, title }) => {
 		setcurrentIndex(newIndex);
 	};
 	return (
-		<div>
+		<div className="image-container">
 			<img src={picture[currentIndex]} alt={title} className="image-product" />
-			<img
-				src={chevron}
-				alt="Left-Arrow"
-				className="left-arrow"
-				onClick={handlePreviousClick}
-			/>
-			<img
-				src={chevron}
-				alt="Right-Arrow"
-				className="right-arrow"
-				onClick={handleNextClick}
-			/>
+
+			{picture.length > 1 ? (
+				<div>
+					<img
+						src={chevron}
+						alt="Left-Arrow"
+						className="left-arrow"
+						onClick={handlePreviousClick}
+					/>
+					<img
+						src={chevron}
+						alt="Right-Arrow"
+						className="right-arrow"
+						onClick={handleNextClick}
+					/>
+					<p className="picture-counter">
+						{currentIndex + 1} / {picture.length}
+					</p>
+				</div>
+			) : (
+				''
+			)}
 		</div>
 	);
 };

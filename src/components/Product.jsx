@@ -1,7 +1,7 @@
 import data from '../data/data.json';
 import '../../style/Product.scss';
 import Slideshow from './Slideshow';
-
+import Rating from './Rating';
 import { ErrorPage } from './ErrorPage';
 import Collapse from './Collapse';
 import { useState, Navigate } from 'react';
@@ -16,7 +16,6 @@ const Product = () => {
 	} else
 		return (
 			<div key={data.id}>
-				<p>Carousel</p>
 				<Slideshow picture={product.pictures} title={data.title} />
 
 				<div className="container-title-host">
@@ -32,7 +31,7 @@ const Product = () => {
 				</div>
 				<div className="product-infos">
 					<p className="tags-container">{product.tags}</p>
-					<p>Rating{product.rating}</p>
+					<Rating product={product.rating} />
 				</div>
 				<div className="product-description">
 					<Collapse title="Description" content={product.description} />
