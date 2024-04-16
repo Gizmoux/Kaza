@@ -7,11 +7,21 @@
 	align-items: center;
 	justify-content: space-between;
 	height: auto;
-	width: 400px;
+	width: 600px;
 	margin-right: 50px;
 	margin-bottom: 20px;
+	h1 {
+		margin-left: 15px;
+	}
 }
 
+.collapse-content {
+	max-width: 90%;
+}
 .chevron-up {
 	transform: rotate(180deg);
+	margin-right: 15px;
+}
+.chevron-down {
+	margin-right: 15px;
 }

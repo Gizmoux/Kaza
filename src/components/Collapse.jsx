@@ -16,7 +16,7 @@ const Collapse = ({ title, content }) => {
 					className={isCollapseOpen ? 'chevron-down' : 'chevron-up'}
 				/>
 			</div>
-			{isCollapseOpen ? <p>{content} </p> : ''}
+			{isCollapseOpen ? <p className="collapse-content">{content} </p> : ''}
 		</div>
 	);
 };
