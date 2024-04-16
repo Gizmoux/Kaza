@@ -22,7 +22,6 @@ const Product = () => {
 				<div className="container-title-host">
 					<div className="product-title">
 						<h1>{product.title}</h1>
-						{/* <h2>ID de ce produit est {idCard}</h2> */}
 						<p>{product.location}</p>
 					</div>
 					<div className="product-host">
@@ -31,19 +30,17 @@ const Product = () => {
 					</div>
 				</div>
 				<div className="product-infos">
-					{/* <p className="tags-container">{product.tags}</p> */}
 					<div className="tag-container">
 						{product.tags.map((tag, index) => (
 							<Tag key={index} product={tag} />
 						))}
 					</div>
-					<Rating product={product.rating} />
+
+					<Rating rating={product.rating} />
 				</div>
 				<div className="product-description">
 					<Collapse title="Description" content={product.description} />
 					<Collapse title="Équipements" content={product.equipments} />
-					{/* <p>Description{product.description}</p> */}
-					{/* <p>Équipements{product.equipments[0]}</p> */}
 				</div>
 			</div>
 		);

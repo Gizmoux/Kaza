@@ -8,6 +8,8 @@
 }
 
 .product-host {
+	display: flex;
+	width: 110px;
 	img {
 		width: 50px;
 		height: 50px;
@@ -17,11 +19,14 @@
 .product-infos {
 	display: flex;
 	justify-content: space-between;
+	flex-direction: row;
+	padding: 0 40px;
 }
 .container-title-host {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 40px;
 }
 
 .product-description {

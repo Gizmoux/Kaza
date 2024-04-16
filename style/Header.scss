@@ -1,18 +1,20 @@
 .header {
 	display: flex;
-	justify-content: space-between; /* Pour aligner les éléments sur les bords gauche et droit */
-	align-items: center; /* Pour aligner verticalement les éléments sur la même ligne */
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 40px 20px 40px;
 }
 
 .header img {
-	width: 100px; /* Ajustez la taille du logo selon vos besoins */
+	width: 100px;
 }
 
-.pages {
-	list-style-type: none; /* Supprime les puces de la liste */
-	display: flex;
+.link {
+	text-decoration: none;
+	margin-left: 10px;
+	justify-content: space-around;
+	color: inherit;
 }
-
-.pages li {
-	margin-left: 20px; /* Espace entre les éléments de la liste */
+.link:hover {
+	text-decoration: underline;
 }

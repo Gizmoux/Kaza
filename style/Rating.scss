@@ -1,3 +1,11 @@
-.ratin-container {
-	background-color: red;
+.stars {
+	width: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.rating-container {
+	display: flex;
+}
+.star-color {
+	color: #f46060;
 }

@@ -7,8 +7,12 @@ const Header = () => {
 			<div className="header">
 				<img src={logo} alt="Logo Kasa" />
 				<ul className="pages">
-					<Link to={'/'}>Accueil</Link>
-					<Link to={'/about'}>À propos</Link>
+					<Link to={'/'} className="link">
+						Accueil
+					</Link>
+					<Link to={'/about'} className="link">
+						À propos
+					</Link>
 				</ul>
 			</div>
 		</>
