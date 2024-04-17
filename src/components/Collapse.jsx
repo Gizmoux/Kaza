@@ -1,7 +1,7 @@
 import '../../style/Collapse.scss';
 import { useState } from 'react';
 import chevron from '../assets/images/chevron.svg';
-const Collapse = ({ title, content }) => {
+const Collapse = ({ title, content, children }) => {
 	const [isCollapseOpen, setIsCollapseOpen] = useState(false);
 	const handleCollapse = () => {
 		setIsCollapseOpen(!isCollapseOpen);
@@ -16,7 +16,13 @@ const Collapse = ({ title, content }) => {
 					className={isCollapseOpen ? 'chevron-down' : 'chevron-up'}
 				/>
 			</div>
-			{isCollapseOpen ? <p className="collapse-content">{content} </p> : ''}
+			{isCollapseOpen ? (
+				<p className="collapse-content">
+					{content} {children}
+				</p>
+			) : (
+				''
+			)}
 		</div>
 	);
 };

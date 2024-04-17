@@ -40,7 +40,13 @@ const Product = () => {
 				</div>
 				<div className="product-description">
 					<Collapse title="Description" content={product.description} />
-					<Collapse title="Équipements" content={product.equipments} />
+					<Collapse title="Équipements">
+						<ul>
+							{product.equipments.map((equipment, index) => (
+								<li key={index}>{equipment}</li>
+							))}
+						</ul>
+					</Collapse>
 				</div>
 			</div>
 		);
