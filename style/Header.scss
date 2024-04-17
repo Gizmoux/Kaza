@@ -18,3 +18,19 @@
 .link:hover {
 	text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+	.header {
+		padding: 10px 10px; /* Réduire l'espacement */
+	}
+
+	.header img {
+		height: 47x;
+		width: 145px;
+	}
+
+	.link {
+		gap: 5px;
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+}

@@ -7,7 +7,7 @@
 	align-items: center;
 	justify-content: space-between;
 	height: auto;
-	width: 700px;
+	width: 540px;
 	margin-right: 50px;
 	margin-bottom: 20px;
 	h1 {
@@ -24,4 +24,26 @@
 }
 .chevron-down {
 	margin-right: 15px;
+}
+@media screen and (max-width: 1200px) {
+	.collapse-container {
+		width: 450px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.collapse-container {
+		width: 350px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.collapse-container {
+		display: flex;
+		width: 335px;
+		height: 40px;
+		h1 {
+			margin: 0 10px;
+			font-size: 18px;
+			font-weight: 700;
+		}
+	}
 }

@@ -34,3 +34,47 @@
 	gap: 20px;
 	padding: 20px 40px;
 }
+@media screen and (max-width: 768px) {
+	.product-description {
+		flex-direction: column;
+		align-items: center;
+		width: 500px;
+	}
+	.product-title h1 {
+		font-weight: 500;
+		width: 100%;
+	}
+	.container-title-host {
+		display: flex;
+		flex-direction: column;
+		align-items: inherit;
+		width: 325px;
+		font-size: 12px;
+	}
+	.product-infos {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 375px) {
+	.product-description {
+		flex-direction: column;
+		align-items: center;
+		width: 335px;
+	}
+	.product-title h1 {
+		font-weight: 500;
+		width: 100%;
+	}
+	.container-title-host {
+		display: flex;
+		flex-direction: column;
+		align-items: inherit;
+		width: 325px;
+		font-size: 12px;
+	}
+	.product-infos {
+		display: flex;
+		flex-direction: column;
+	}
+}
