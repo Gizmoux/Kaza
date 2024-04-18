@@ -24,9 +24,13 @@
 .chevron-up {
 	transform: rotate(180deg);
 	margin-right: 15px;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
 }
 .chevron-down {
 	margin-right: 15px;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
 }
 @media screen and (max-width: 1200px) {
 	.collapse-container {
