@@ -9,3 +9,8 @@
 .star-color {
 	color: #f46060;
 }
+@media screen and (max-width: 375px) {
+	.rating-container {
+		margin: 0% 30% 0% -30%;
+	}
+}

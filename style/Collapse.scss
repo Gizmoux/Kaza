@@ -8,15 +8,18 @@
 	justify-content: space-between;
 	height: auto;
 	width: 540px;
-	margin-right: 50px;
-	margin-bottom: 20px;
+	margin: 10px 10px;
 	h1 {
 		margin-left: 15px;
 	}
 }
 
 .collapse-content {
-	max-width: 85%;
+	max-width: 500px;
+	margin-left: 15px;
+	ul {
+		list-style: none;
+	}
 }
 .chevron-up {
 	transform: rotate(180deg);
@@ -34,16 +37,34 @@
 	.collapse-container {
 		width: 350px;
 	}
+	.collapse-content {
+		max-width: 300px;
+		margin-left: 15px;
+	}
 }
 @media screen and (max-width: 768px) {
 	.collapse-container {
 		display: flex;
 		width: 335px;
 		height: 40px;
+		margin: 10px 0;
 		h1 {
 			margin: 0 10px;
 			font-size: 18px;
 			font-weight: 700;
 		}
+	}
+	.collapse-content {
+		max-width: 300px;
+		margin-left: 15px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.collapse-container {
+		margin: 20px 0px 10px 0px;
+	}
+	.collapse-content {
+		max-width: 300px;
+		margin-left: 15px;
 	}
 }

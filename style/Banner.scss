@@ -9,7 +9,7 @@
 	height: 223px;
 	border-radius: 10px;
 	object-fit: cover;
-	filter: brightness(55%);
+	filter: brightness(45%);
 }
 
 .banner-text {
@@ -22,5 +22,14 @@
 	font-size: 40px;
 	font-weight: lighter;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
+	.banner-container h1 {
+		font-size: 24px;
+		width: 180px;
+		text-align: start;
+	}
+	.banner-image {
+		height: 111px;
+		filter: brightness(45%);
+	}
 }
