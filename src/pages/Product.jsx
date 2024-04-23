@@ -1,10 +1,10 @@
 import data from '../data/data.json';
 import '../../style/Product.scss';
-import Slideshow from './Slideshow';
-import Tag from './Tag';
-import Rating from './Rating';
+import Slideshow from '../components/Slideshow';
+import Tag from '../components/Tag';
+import Rating from '../components/Rating';
 import { ErrorPage } from './ErrorPage';
-import Collapse from './Collapse';
+import Collapse from '../components/Collapse';
 import { useState, Navigate } from 'react';
 import { useParams } from 'react-router-dom';
 const Product = () => {

@@ -1,6 +1,6 @@
-import Banner from './Banner';
+import Banner from '../components/Banner';
 import bannerImage from '../assets/images/about_image.png';
-import Collapse from './Collapse';
+import Collapse from '../components/Collapse';
 import '../../style/About.scss';
 const About = ({ imgSrc }) => {
 	const aboutDatas = [
