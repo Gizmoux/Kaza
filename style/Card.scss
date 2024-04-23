@@ -7,24 +7,22 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 40px;
-}
-
-.cardItem {
-	background-color: #f46060;
-	width: 100%;
-	max-width: 340px;
-	height: 340px;
-	text-decoration: none;
-	color: inherit;
-	border-radius: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin-bottom: 10%;
 }
 
 .card-title {
+	color: black;
+	margin-top: 0px;
+}
+
+.link-style {
+	text-decoration: none;
+}
+.card-image {
 	width: 100%;
-	text-align: center;
+	height: 100%;
+	border-radius: 10px;
+	object-fit: cover;
 }
 @media screen and (max-width: 375px) {
 	.card-container {

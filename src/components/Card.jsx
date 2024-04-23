@@ -7,7 +7,12 @@ export const Card = () => {
 		<div className="page-container">
 			<div className="card-container">
 				{data.map(item => (
-					<Link key={data.id} className="cardItem" to={`/product/${item.id}`}>
+					<Link key={data.id} to={`/product/${item.id}`} className="link-style">
+						<img
+							src={item.cover}
+							alt="Image Appartement à louer"
+							className="card-image"
+						/>
 						<p className="card-title">{item.title}</p>
 					</Link>
 				))}
