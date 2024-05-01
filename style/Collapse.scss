@@ -11,12 +11,13 @@
 	margin: 10px 10px;
 	h1 {
 		margin-left: 15px;
+		font-size: 20px;
 	}
 }
 
 .collapse-content {
 	max-width: 500px;
-	margin-left: 15px;
+	margin-left: 30px;
 	ul {
 		list-style: none;
 	}
@@ -35,6 +36,10 @@
 @media screen and (max-width: 1200px) {
 	.collapse-container {
 		width: 450px;
+	}
+	.collapse-content {
+		max-width: 400px;
+		margin-left: 25px;
 	}
 }
 @media screen and (max-width: 1000px) {
@@ -60,7 +65,7 @@
 	}
 	.collapse-content {
 		max-width: 300px;
-		margin-left: 15px;
+		margin-left: 25px;
 	}
 }
 @media screen and (max-width: 375px) {

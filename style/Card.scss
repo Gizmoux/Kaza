@@ -4,15 +4,18 @@
 }
 
 .card-container {
+	background-color: #f6f6f6;
+	padding: 50px;
+	border-radius: 15px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 40px;
+	gap: 50px;
 	margin-bottom: 10%;
 }
 
 .card-title {
-	color: black;
-	margin-top: 0px;
+	color: #f46060;
+	margin-top: 0;
 }
 
 .link-style {
