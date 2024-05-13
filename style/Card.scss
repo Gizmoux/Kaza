@@ -5,7 +5,7 @@
 
 .card-container {
 	background-color: #f6f6f6;
-	padding: 50px;
+	padding: 20px;
 	border-radius: 15px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -14,12 +14,15 @@
 }
 
 .card-title {
-	color: #f46060;
-	margin-top: 0;
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
 }
 
 .link-style {
 	text-decoration: none;
+	position: relative;
 }
 .card-image {
 	width: 100%;
@@ -27,11 +30,27 @@
 	border-radius: 10px;
 	object-fit: cover;
 }
+@media screen and (max-width: 768px) {
+	.card-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.cardItem {
+		height: 450px;
+	}
+	.card-title {
+		font-size: 12px;
+	}
+}
 @media screen and (max-width: 375px) {
 	.card-container {
 		grid-template-columns: repeat(1, 1fr);
 	}
 	.cardItem {
 		height: 255px;
+	}
+	.page-container {
+		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 }

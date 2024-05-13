@@ -1,7 +1,7 @@
 .banner-container {
 	position: relative;
 	text-align: center;
-	padding: 40px;
+	margin: 0 20px;
 }
 
 .banner-image {
@@ -20,13 +20,17 @@
 	color: white;
 	z-index: 1;
 	font-size: 40px;
-	font-weight: lighter;
+}
+@media screen and (max-width: 768px) {
+	.banner-container {
+	}
 }
 @media screen and (max-width: 375px) {
 	.banner-container h1 {
-		font-size: 24px;
+		font-size: 19px;
 		width: 180px;
 		text-align: start;
+		margin-left: -11%;
 	}
 	.banner-image {
 		height: 111px;

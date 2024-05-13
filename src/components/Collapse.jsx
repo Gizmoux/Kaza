@@ -7,7 +7,7 @@ const Collapse = ({ title, content, children }) => {
 		setIsCollapseOpen(!isCollapseOpen);
 	};
 	return (
-		<div>
+		<div className="main-collapse-container">
 			<div className="collapse-container" onClick={handleCollapse}>
 				<h1>{title}</h1>
 				<img

@@ -1,9 +1,21 @@
 .about-collapse {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	margin: 3% 10%;
 }
+
 @media screen and (max-width: 768px) {
 	.about-collapse {
+		max-width: 768px;
+		margin: 3% 25%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.about-collapse {
+		max-width: 375px;
+		margin: 0;
 	}
 }

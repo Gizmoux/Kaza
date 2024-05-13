@@ -5,15 +5,21 @@
 .product-title h1 {
 	color: #f46060;
 	margin-bottom: -10px;
+	font-weight: 300;
 }
 
 .product-host {
 	display: flex;
-	width: 110px;
+	width: 100px;
 	img {
 		width: 50px;
 		height: 50px;
 		border-radius: 50%;
+	}
+	p {
+		color: #f46060;
+		display: flex;
+		justify-content: end;
 	}
 }
 .product-infos {
@@ -35,9 +41,9 @@
 	// padding: 20px 40px;
 }
 @media screen and (max-width: 768px) {
-	.product-description {
-		flex-direction: column;
-		align-items: center;
+	.main-collapse-container {
+		// max-width: 768px;
+		// width: 60%;
 	}
 	.product-title h1 {
 		font-weight: 500;
@@ -45,14 +51,14 @@
 	}
 	.container-title-host {
 		display: flex;
-		flex-direction: column;
+		// flex-direction: column;
 
 		align-items: center;
 		font-size: 12px;
 	}
 	.product-infos {
 		display: flex;
-		flex-direction: column;
+		// flex-direction: column;
 		align-items: center;
 		margin-top: 10px;
 	}
