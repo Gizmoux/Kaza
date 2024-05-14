@@ -1,16 +1,18 @@
 .page-container {
 	max-width: 100%;
-	margin: 20px 60px;
+	// margin: 20px 60px;
+	margin-bottom: 20px;
 }
 
 .card-container {
-	background-color: #f6f6f6;
-	padding: 20px;
+	// background-color: #f6f6f6;
+	// background-color: red;
+	padding: 50px;
 	border-radius: 15px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 50px;
-	margin-bottom: 10%;
+	margin: 50px 50px 0px 50px;
 }
 
 .card-title {
@@ -26,10 +28,16 @@
 }
 .card-image {
 	width: 100%;
-	height: 100%;
+	height: 340px;
 	border-radius: 10px;
 	object-fit: cover;
+	background: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.8)
+	);
 }
+
 @media screen and (max-width: 768px) {
 	.card-container {
 		grid-template-columns: repeat(2, 1fr);
@@ -40,17 +48,23 @@
 	.card-title {
 		font-size: 12px;
 	}
+	.card-image {
+		height: 240px;
+	}
 }
 @media screen and (max-width: 375px) {
 	.card-container {
 		grid-template-columns: repeat(1, 1fr);
 	}
-	.cardItem {
-		height: 255px;
-	}
 	.page-container {
 		width: 100%;
 		margin: 0;
 		padding: 0;
+	}
+	.card-container {
+		background-color: white;
+		gap: 20px;
+		padding: 0px;
+		margin: 20px;
 	}
 }

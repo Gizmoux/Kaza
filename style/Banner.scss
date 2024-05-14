@@ -1,7 +1,7 @@
 .banner-container {
 	position: relative;
 	text-align: center;
-	margin: 0 20px;
+	margin: 0 50px;
 }
 
 .banner-image {
@@ -22,7 +22,8 @@
 	font-size: 40px;
 }
 @media screen and (max-width: 768px) {
-	.banner-container {
+	.banner-text {
+		font-size: 32px;
 	}
 }
 @media screen and (max-width: 375px) {
@@ -35,5 +36,8 @@
 	.banner-image {
 		height: 111px;
 		filter: brightness(45%);
+	}
+	.banner-container {
+		margin: 0 20px;
 	}
 }

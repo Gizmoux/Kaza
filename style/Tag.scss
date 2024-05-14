@@ -11,17 +11,24 @@
 	height: 100%;
 	max-width: auto;
 	display: flex;
-	padding: 0px 5px;
-	border-radius: 5px;
+
+	border-radius: 10px;
 
 	.tag {
 		font-size: 14px;
+		margin: 0 30px;
 		display: flex;
 		align-items: center;
 	}
 }
 @media screen and (max-width: 375px) {
 	.tag-container {
-		gap: 65px;
+		gap: 15px;
+	}
+	.tag-fill {
+		.tag {
+			font-size: 10px;
+			margin: 0 10px;
+		}
 	}
 }

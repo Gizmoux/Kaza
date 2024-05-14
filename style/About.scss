@@ -3,9 +3,11 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 3% 10%;
+	margin: 3% 10% 15% 10%;
 }
-
+.main-collapse-container {
+	padding-bottom: 20px;
+}
 @media screen and (max-width: 768px) {
 	.about-collapse {
 		max-width: 768px;
@@ -17,5 +19,8 @@
 	.about-collapse {
 		max-width: 375px;
 		margin: 0;
+	}
+	.main-collapse-container {
+		padding-bottom: 0px;
 	}
 }

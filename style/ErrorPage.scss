@@ -1,6 +1,46 @@
 .error-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	text-align: center;
+	margin: 0 auto;
+	width: 40%;
+	img {
+		margin-bottom: 50px;
+	}
+	p {
+		margin-bottom: 100px;
+		color: #f46060;
+	}
+	a {
+		margin-bottom: 150px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.error-container {
+		img {
+			margin-bottom: 40px;
+		}
+		p {
+			margin-bottom: 80px;
+		}
+		a {
+			margin-bottom: 120px;
+		}
+	}
+}
+@media screen and (max-width: 375px) {
+	.error-container {
+		width: 50%;
+		img {
+			margin-top: 40px;
+		}
+		p {
+			margin-bottom: 50px;
+			font-size: 12px;
+		}
+		a {
+			width: 100%;
+			font-size: 12px;
+		}
+	}
 }
