@@ -12,8 +12,11 @@ export const Card = () => {
 							src={item.cover}
 							alt="Image Appartement à louer"
 							className="card-image"
+							key="idImg"
 						/>
-						<p className="card-title">{item.title}</p>
+						<p className="card-title" key="id-title">
+							{item.title}
+						</p>
 					</Link>
 				))}
 			</div>
