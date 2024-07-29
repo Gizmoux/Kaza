@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import Banner from '../components/Banner';
 import bannerImage from '../assets/images/about_image.png';
 import Collapse from '../components/Collapse';
 import '../../style/About.scss';
-const About = ({ imgSrc }) => {
+const About = () => {
 	const aboutDatas = [
 		{
 			id: '1',

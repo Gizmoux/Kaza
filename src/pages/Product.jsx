@@ -1,6 +1,6 @@
 import data from '../data/data.json';
 import '../../style/Product.scss';
-import Slideshow from '../components/Slideshow';
+import Carousel from '../components/Carousel';
 import Tag from '../components/Tag';
 import Rating from '../components/Rating';
 import { ErrorPage } from './ErrorPage';
@@ -9,7 +9,7 @@ import { useState, Navigate } from 'react';
 import { useParams } from 'react-router-dom';
 const Product = () => {
 	const { idCard } = useParams();
-	const [products, setProducts] = useState(data);
+	const [products] = useState(data);
 
 	const product = products.find(product => product.id === idCard);
 	if (!product) {
@@ -17,7 +17,7 @@ const Product = () => {
 	} else
 		return (
 			<div key={data.id}>
-				<Slideshow picture={product.pictures} title={data.title} />
+				<Carousel picture={product.pictures} title={data.title} />
 
 				<div className="container-title-host">
 					<div className="product-title">

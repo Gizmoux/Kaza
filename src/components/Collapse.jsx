@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import '../../style/Collapse.scss';
 import { useState } from 'react';
 import chevron from '../assets/images/chevron.svg';
