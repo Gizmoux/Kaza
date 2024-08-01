@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import '../../style/Banner.scss';
 const Banner = ({ imgSrc, text }) => {
 	return (

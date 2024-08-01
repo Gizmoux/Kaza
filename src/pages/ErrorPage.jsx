@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import errorImg from '../assets/images/404.png';
 import { Link } from 'react-router-dom';
 import '../../style/ErrorPage.scss';

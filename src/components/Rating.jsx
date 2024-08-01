@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import emptyStar from '../assets/images/emptyStar.svg';
 import fullStar from '../assets/images/fullStar.svg';
 import { useState, useEffect } from 'react';

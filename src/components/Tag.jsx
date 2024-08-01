@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import '../../style/Tag.scss';
 const Tag = ({ product }) => {
 	return (
