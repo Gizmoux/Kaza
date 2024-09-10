@@ -5,11 +5,11 @@ import Tag from '../components/Tag';
 import Rating from '../components/Rating';
 import { ErrorPage } from './ErrorPage';
 import Collapse from '../components/Collapse';
-import { useState, Navigate } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useState } from 'react';
+import { useParams, Navigate } from 'react-router-dom';
 const Product = () => {
 	const { idCard } = useParams();
-	const [products] = useState(data);
+	const products = data;
 
 	const product = products.find(product => product.id === idCard);
 	if (!product) {
